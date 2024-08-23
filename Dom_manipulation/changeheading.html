@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="head">
+        hello world
+    </h1>
+    <button id ="mybutton">click me </button>
+    <input tyep="text" id ="myinput" placeholder ="write something you know ">
+    <script>
+        const heading =document.getElementById("head");
+        const buttonn =document.getElementById("mybutton");
+        const inputt=document.getElementById("myinput");
+        buttonn.addEventListener('click',function(){
+            const newtext=inputt.value;
+            heading.textContent=newtext;
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

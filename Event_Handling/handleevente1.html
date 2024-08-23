@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button id ="mybutton">
+    click me
+</button>
+<input type="text" id="myinput" placeholder="write something you know" >
+<script>
+    const buttonn =document.getElementById('mybutton').addEventListener('click',function(){
+        alert('button clickedd');
+    });
+    const inputt=document.getElementById('myinput').addEventListener('keypress',function(event){
+        console.log(`key pressed : ${event.key}`);
+    });
+</script>
+<body>
+    
+</body>
+</html>
