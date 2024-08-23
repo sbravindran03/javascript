@@ -1,0 +1,40 @@
+<!-- Create a simple HTML page with the following elements:
+A heading that initially says "Welcome!".
+An input field where the user can enter a new heading text.
+A button labeled "Update Heading".
+Use JavaScript to:
+When the button is clicked, update the heading text with the content from the input field.
+Add an additional button to:
+Change the color of the heading to a different color when clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="headd"> Welcome</h1>
+    <button id="buttonn">
+        click me
+    </button>
+    <input type="text" id="myyinput" placeholder="write something ">
+    <button id ="changecolor">
+change color
+    </button>
+<script>
+    const buttoon=document.getElementById("buttonn");
+    const headding= document.getElementById("headd");
+    const inputtt=document.getElementById("myyinput");
+    buttoon.addEventListener('click',function(){
+        const ravi=inputtt.value;
+        headding.textContent=ravi;
+    });
+    const colorchange=document.getElementById("changecolor").addEventListener('click',function(){
+        headding.style.color="red";
+    })
+    
+</script>
+</head>
+<body>
+    
+</body>
+</html>
